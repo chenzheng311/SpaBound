@@ -1,4 +1,4 @@
-include README.md LICENSE NOTICE.md requirements.txt requirements-tested.txt
+include README.md docs/legal/AGPL-3.0.txt NOTICE.md requirements.txt requirements-tested.txt
 recursive-include examples *.py *.ipynb *.md
 recursive-include tests *.py
 recursive-include data *.md

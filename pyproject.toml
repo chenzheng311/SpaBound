@@ -9,7 +9,7 @@ description = "Boundary-aware graph learning for paired spatial multi-omics"
 readme = "README.md"
 requires-python = ">=3.10,<3.12"
 license = "AGPL-3.0-only"
-license-files = ["LICENSE", "NOTICE.md", "licenses/*.txt"]
+license-files = ["docs/legal/AGPL-3.0.txt", "NOTICE.md", "licenses/*.txt"]
 keywords = ["spatial-omics", "multimodal", "graph-learning", "bioinformatics"]
 classifiers = [
     "Development Status :: 3 - Alpha",

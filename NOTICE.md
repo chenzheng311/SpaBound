@@ -14,7 +14,7 @@ from or adapt **SpatialGlue**, by Yahui Long and collaborators:
 
 The official 1.1.4 source distribution contains the GNU Affero General Public
 License, version 3. Its license text is preserved verbatim as this repository's
-`LICENSE`. The distribution metadata's MIT label conflicts with that included
+`docs/legal/AGPL-3.0.txt`. The distribution metadata's MIT label conflicts with that included
 text; this package follows the included AGPLv3 text for the derived distribution.
 
 The supplied preprocessing module closely follows SpatialGlue preprocessing;
@@ -43,4 +43,4 @@ the SpatialGlue license above. Unused imports from the original sibling
 - Added installation metadata, documentation, and synthetic smoke tests.
 
 See `docs/RELEASE_NOTES.md` for the specific compatibility changes. This package
-retains the upstream warranty disclaimer in `LICENSE`.
+retains the upstream warranty disclaimer in `docs/legal/AGPL-3.0.txt`.
