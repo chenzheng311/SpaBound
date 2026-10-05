@@ -2,7 +2,7 @@
 
 These notebooks demonstrate paired spatial multi-omics analysis from input H5AD files to graphs, embeddings, clustering, metrics and plots. Data and trained results are not bundled. Install SpaBound and the notebook dependencies using the repository README; mclust clustering additionally requires R, the R package `mclust`, and `rpy2`.
 
-Start Jupyter with its working directory at the repository root or `examples/`. Open one notebook, select the installed Python environment, and run its cells from top to bottom in a fresh kernel.
+Start Jupyter with its working directory at the repository root, `examples/`, or the parent workspace containing `SpaBound/`. Open one notebook, select the Python environment with the required dependencies, and run its cells from top to bottom in a fresh kernel. The first cell locates the local `spabound/` source and adds its repository root to Python's import path, so a source checkout can be used without installing SpaBound itself. Dependencies still need to be installed as described in the repository README.
 
 ## Input layout
 
