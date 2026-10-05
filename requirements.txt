@@ -1,0 +1,2 @@
+# Install the local package and its notebook dependencies from the repository root.
+.[examples]

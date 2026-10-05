@@ -1,0 +1,15 @@
+# Direct dependencies in the local CPU smoke-test environment (Python 3.11.3).
+# This is a direct-dependency snapshot, not a complete transitive lockfile.
+# Install a platform-appropriate PyTorch build before applying these constraints.
+torch==2.1.0
+setuptools==80.9.0
+numpy==1.26.4
+scipy==1.14.1
+pandas==2.2.3
+scikit-learn==1.7.0
+scanpy==1.9.3
+anndata==0.9.1
+matplotlib==3.9.2
+seaborn==0.13.2
+tqdm==4.65.0
+scikit-misc==0.5.2
