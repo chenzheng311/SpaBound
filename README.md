@@ -126,40 +126,4 @@ tests/              Small synthetic CPU smoke tests
 docs/               Naming migration, release notes, and execution results
 ```
 
-## Validation
 
-```bash
-python -m pip install -e ".[dev]"
-python -m pytest
-```
-
-The tests exercise graph construction, CPU training, and output integrity on
-small synthetic data, as well as notebook structure. These remain installation
-checks, separate from the complete example runs below.
-
-All three examples were also run from counts on an NVIDIA GeForce RTX 4070 Ti
-SUPER using the released model and fixed notebook settings. Each dataset had
-one run, without parameter search or score-based reruns during verification.
-The two HLN examples used identical graph and training settings.
-
-| Dataset | Spots evaluated | Epochs | Observed ARI |
-|---|---:|---:|---:|
-| HLN A1 | 3,484 / 3,484 | 800 | 0.3707401885 |
-| HLN D1 | 3,359 / 3,359 | 800 | 0.3582863835 |
-| Mouse embryo | 2,186 / 2,186 | 300 | 0.4795129460 |
-
-D1 agrees with the paper's ARI to four decimal places; A1 and mouse embryo are
-higher in these runs. This verifies execution of the released examples, rather
-than asserting exact reproduction of every historical paper workflow or
-performance across seeds and hardware. See [execution results](docs/REPRODUCTION.md)
-for NMI/AMI, seeds, software versions and protocol details,
-[release notes](docs/RELEASE_NOTES.md) for packaging changes, and
-[migration notes](docs/MIGRATION.md) for renamed modules and keys.
-
-## License and attribution
-
-This distribution retains the GNU AGPLv3 in [LICENSE](LICENSE), reflecting
-SpatialGlue-derived components. The original shared-private multimodal VAE
-repository's MIT notice is preserved separately in
-[licenses/](licenses/shared-private-multimodalVAE-MIT.txt).
-[NOTICE.md](NOTICE.md) records the implementation lineage and modifications.
